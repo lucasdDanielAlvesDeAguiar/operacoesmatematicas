@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "multiplicar.c"
-#include "dividir.c"
+#include "Dividir.c"
 
 int main(){
 
