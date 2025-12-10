@@ -1,5 +1,23 @@
-#include <stdio.h>
+int multiplicar(int a, int b) {
+    int resultado = 0;
+    int negativo = 0;
 
-int multiplicar (int a, int b){
-return a*b;
+    if (a < 0) {
+        a = -a;
+        negativo = !negativo;
+    }
+
+    if (b < 0) {
+        b = -b;
+        negativo = !negativo;
+    }
+
+    for (int i = 0; i < b; i++) {
+        resultado += a;
+    }
+
+    if (negativo)
+        resultado = -resultado;
+
+    return resultado;
 }

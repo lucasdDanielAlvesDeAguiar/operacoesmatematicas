@@ -8,12 +8,13 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: compile
-      run: gcc multiplicar_test.c -o multiplicar_test
-    - name: run
-      run: ./multiplicar_test
+
+    - name: Compilar
+      run: gcc multiplicar.c Dividir.c operacoesmatematicas_test.c -o teste
+
+    - name: Executar testes
+      run: ./teste
