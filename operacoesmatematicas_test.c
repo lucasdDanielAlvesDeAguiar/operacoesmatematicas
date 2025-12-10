@@ -1,5 +1,6 @@
-#include <assert.h>
-
+#include <assert.c>
+#include 'operacoesmatematicas.c'
+#include  'multiplicar.c'
 
 int multiplicar(int a, int b);
 int dividir(int a, int b);
