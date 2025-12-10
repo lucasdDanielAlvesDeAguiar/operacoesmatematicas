@@ -1,9 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
 #include "multiplicar.c"
-
-int multiplicar(int a, int b);  
-int dividir(int a, int b);
+#include "Dividir.c"
 
 int main() {
     assert(multiplicar(2, 3) == 6);
@@ -12,5 +10,6 @@ int main() {
     assert(dividir(10, 2) == 5);
     assert(dividir(-9, 3) == -3);
 
+    printf("todos os testes funcionaram\n");
     return 0;
 }
