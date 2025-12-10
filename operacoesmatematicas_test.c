@@ -1,5 +1,5 @@
 #include <assert.c>
-#include 'operacoesmatematicas.c'
+#include 'operacoesmatematicas.h'
 #include  'multiplicar.c'
 
 int multiplicar(int a, int b);
